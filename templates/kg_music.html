@@ -1,0 +1,19 @@
+<div class="message" style="margin: 10px auto; max-width: 500px; line-height: 20px; position: relative;
+border-radius: 5px; border: 4px solid teal;" id="m{{ message["id"] }}">
+    <br>
+    <span class="spo">（1）{% module linkify(str(message["retrieval_spo"][0])) %}</span>
+    <br>
+    <br>
+    <span class="spo">（2）{% module linkify(str(message["retrieval_spo"][1])) %}</span>
+    <br>
+    <br>
+    <span class="spo">（3）{% module linkify(str(message["retrieval_spo"][2])) %}</span>
+    <br>
+    <br>
+    <span class="spo">（4）{% module linkify(str(message["retrieval_spo"][3])) %}</span>
+    <br>
+    <br>
+    <span class="spo">（5）{% module linkify(str(message["retrieval_spo"][4])) %}</span>
+    <br>
+    <br>
+</div>

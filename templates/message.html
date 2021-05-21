@@ -1,0 +1,33 @@
+<div class="message" id="m{{ message["id"] }}">
+    <div class="row-6">
+        <i class="fas fa-user-graduate" style="font-size:40px; color: IndianRed; margin-top: 5px; margin-left: 5px"></i>
+        <span style="font-size:20px; margin-top: 5px; margin-left: 5px" class="response">
+            我：{% module linkify(message["body"]) %}
+        </span>
+    </div>
+<!--    <span class="movie-name"></span>-->
+<!--    检索知识三元组：-->
+<!--    <br>-->
+<!--    1.-->
+<!--    <span class="spo">{% module linkify(str(message["retrieval_spo"][0])) %}</span>-->
+<!--    <br>-->
+<!--    2.-->
+<!--    <span class="spo">{% module linkify(str(message["retrieval_spo"][1])) %}</span>-->
+<!--    <br>-->
+<!--    3.-->
+<!--    <span class="spo">{% module linkify(str(message["retrieval_spo"][2])) %}</span>-->
+<!--    <br>-->
+<!--    4.-->
+<!--    <span class="spo">{% module linkify(str(message["retrieval_spo"][3])) %}</span>-->
+<!--    <br>-->
+<!--    5.-->
+<!--    <span class="spo">{% module linkify(str(message["retrieval_spo"][4])) %}</span>-->
+<!--    <br>-->
+<!--    https://my.oschina.net/u/4328928/blog/3315756-->
+    <div class="row-5">
+        <i class="fas fa-robot" style="font-size:40px; color: teal; margin-top: 5px; margin-left: 5px"></i>
+        <span style="font-size:20px; margin-top: 5px; margin-left: 5px" class="response">
+            小灰：{% module linkify(str(message["response"])) %}
+        </span>
+    </div>
+</div>
